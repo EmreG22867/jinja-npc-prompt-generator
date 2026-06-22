@@ -40,7 +40,8 @@ The file `data/examples.json` contains three examples:
 
 Each example uses different optional fields and output settings to demonstrate why a templating engine is useful.
 
-RUN:
+##RUN
+
 pip install -r requirements.txt
 python src/generate_prompts.py
 
