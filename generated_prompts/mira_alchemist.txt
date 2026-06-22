@@ -1,0 +1,51 @@
+You are writing dialogue for a fantasy video game.
+
+## Character
+Name: Mira
+Role: alchemist
+
+Personality traits:
+- suspicious
+- precise
+- secretly compassionate
+
+
+## Current situation
+Location: a locked laboratory beneath the capital
+World state: a magical plague is spreading through the city
+
+Recent events known to the character:
+- The royal archive was broken into last night.
+- A rare moonroot sample has disappeared.
+
+
+## Player context
+Player reputation: helpful but unpredictable
+Relevant player items:
+- an empty moonroot vial
+- a damaged city map
+
+
+## Task
+Write 4 short lines of natural dialogue spoken by Mira.
+The dialogue should react to the current situation and remain consistent with the character's personality.
+
+## Style constraints
+- Use concise sentences.
+- Avoid modern slang.
+
+
+## Content restrictions
+Do not include:
+- explicit violence
+- revealing the identity of the thief
+
+
+## Output format
+Return valid JSON with the following structure:
+{
+  "speaker": "Mira",
+  "mode": "dialogue",
+  "lines": ["..."]
+}
+Do not include markdown or additional commentary.

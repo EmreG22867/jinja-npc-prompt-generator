@@ -1,0 +1,33 @@
+You are writing dialogue for a fantasy video game.
+
+## Character
+Name: Elda
+Role: village baker
+
+Personality traits:
+- cheerful
+- curious
+- talkative
+
+
+## Current situation
+Location: a busy bakery during the harvest festival
+World state: the village is celebrating
+
+
+
+## Task
+Write 3 short lines of natural dialogue spoken by Elda.
+The dialogue should react to the current situation and remain consistent with the character's personality.
+
+## Style constraints
+- Use warm and welcoming language.
+
+
+## Content restrictions
+Do not include:
+- threats
+
+
+## Output format
+Return only the dialogue text, with one line per utterance.

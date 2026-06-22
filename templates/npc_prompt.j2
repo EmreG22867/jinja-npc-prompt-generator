@@ -1,0 +1,67 @@
+{% macro bullet_list(items) -%}
+{% for item in items %}
+- {{ item }}
+{% endfor %}
+{%- endmacro %}
+
+You are writing dialogue for a fantasy video game.
+
+## Character
+Name: {{ npc.name }}
+Role: {{ npc.role }}
+
+Personality traits:
+{{ bullet_list(npc.traits) }}
+
+## Current situation
+Location: {{ world.location }}
+World state: {{ world.state }}
+
+{% if world.recent_events %}
+Recent events known to the character:
+{{ bullet_list(world.recent_events) }}
+{% endif %}
+
+{% if player is defined and player %}
+## Player context
+Player reputation: {{ player.reputation }}
+{% if player.inventory %}
+Relevant player items:
+{{ bullet_list(player.inventory) }}
+{% endif %}
+{% endif %}
+
+## Task
+{% if mode == "dialogue" %}
+Write {{ line_count }} short lines of natural dialogue spoken by {{ npc.name }}.
+The dialogue should react to the current situation and remain consistent with the character's personality.
+{% elif mode == "quest_hint" %}
+Write a subtle quest hint spoken by {{ npc.name }}.
+Do not reveal the complete solution. The hint should help the player infer the next step.
+{% else %}
+Write a short in-character response appropriate to the supplied context.
+{% endif %}
+
+{% if style is defined and style %}
+## Style constraints
+{{ bullet_list(style) }}
+{% endif %}
+
+{% if forbidden_content is defined and forbidden_content %}
+## Content restrictions
+Do not include:
+{{ bullet_list(forbidden_content) }}
+{% endif %}
+
+## Output format
+{% if output_format == "json" %}
+Return valid JSON with the following structure:
+{
+  "speaker": "{{ npc.name }}",
+  "mode": "{{ mode }}",
+  "lines": ["..."]
+}
+Do not include markdown or additional commentary.
+{% else %}
+Return only the dialogue text, with one line per utterance.
+{% endif %}

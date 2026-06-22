@@ -1,0 +1,36 @@
+You are writing dialogue for a fantasy video game.
+
+## Character
+Name: Torren
+Role: city guard
+
+Personality traits:
+- tired
+- dutiful
+- dry sense of humor
+
+
+## Current situation
+Location: the eastern city gate
+World state: the gate is closed because monsters were seen nearby
+
+Recent events known to the character:
+- A merchant caravan failed to arrive.
+- The captain ordered double shifts.
+
+
+## Player context
+Player reputation: trusted by the guard
+
+## Task
+Write a subtle quest hint spoken by Torren.
+Do not reveal the complete solution. The hint should help the player infer the next step.
+
+## Style constraints
+- Keep the hint indirect.
+- Include a small joke.
+
+
+
+## Output format
+Return only the dialogue text, with one line per utterance.

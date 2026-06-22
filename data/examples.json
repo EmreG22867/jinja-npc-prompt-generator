@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mira_alchemist",
+    "npc": {
+      "name": "Mira",
+      "role": "alchemist",
+      "traits": [
+        "suspicious",
+        "precise",
+        "secretly compassionate"
+      ]
+    },
+    "world": {
+      "location": "a locked laboratory beneath the capital",
+      "state": "a magical plague is spreading through the city",
+      "recent_events": [
+        "The royal archive was broken into last night.",
+        "A rare moonroot sample has disappeared."
+      ]
+    },
+    "player": {
+      "reputation": "helpful but unpredictable",
+      "inventory": [
+        "an empty moonroot vial",
+        "a damaged city map"
+      ]
+    },
+    "mode": "dialogue",
+    "line_count": 4,
+    "style": [
+      "Use concise sentences.",
+      "Avoid modern slang."
+    ],
+    "forbidden_content": [
+      "explicit violence",
+      "revealing the identity of the thief"
+    ],
+    "output_format": "json"
+  },
+  {
+    "id": "torren_guard",
+    "npc": {
+      "name": "Torren",
+      "role": "city guard",
+      "traits": [
+        "tired",
+        "dutiful",
+        "dry sense of humor"
+      ]
+    },
+    "world": {
+      "location": "the eastern city gate",
+      "state": "the gate is closed because monsters were seen nearby",
+      "recent_events": [
+        "A merchant caravan failed to arrive.",
+        "The captain ordered double shifts."
+      ]
+    },
+    "player": {
+      "reputation": "trusted by the guard",
+      "inventory": []
+    },
+    "mode": "quest_hint",
+    "line_count": 1,
+    "style": [
+      "Keep the hint indirect.",
+      "Include a small joke."
+    ],
+    "forbidden_content": [],
+    "output_format": "plain"
+  },
+  {
+    "id": "elda_baker",
+    "npc": {
+      "name": "Elda",
+      "role": "village baker",
+      "traits": [
+        "cheerful",
+        "curious",
+        "talkative"
+      ]
+    },
+    "world": {
+      "location": "a busy bakery during the harvest festival",
+      "state": "the village is celebrating",
+      "recent_events": []
+    },
+    "mode": "dialogue",
+    "line_count": 3,
+    "style": [
+      "Use warm and welcoming language."
+    ],
+    "forbidden_content": [
+      "threats"
+    ],
+    "output_format": "plain"
+  }
+]
