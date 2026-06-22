@@ -42,7 +42,6 @@ Each example uses different optional fields and output settings to demonstrate w
 
 ## RUN
 
-pip install -r requirements.txt
-
-python src/generate_prompts.py
+- pip install -r requirements.txt
+- python src/generate_prompts.py
 
